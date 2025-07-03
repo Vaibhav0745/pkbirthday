@@ -1,0 +1,313 @@
+.wishes-section {
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.wishes-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.wishes-header h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.wishes-header p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.wishes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wish-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 3rem;
+  box-shadow: 0 15px 35px rgba(255, 105, 180, 0.3);
+  position: relative;
+  overflow: hidden;
+  animation: cardFloat 6s ease-in-out infinite;
+}
+
+.wish-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 182, 193, 0.1), transparent);
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+.wish-decoration {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pookie-cat-wish {
+  font-size: 4rem;
+  animation: catBounce 2s ease-in-out infinite;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.wish-hearts {
+  font-size: 1.5rem;
+  animation: heartsFloat 3s ease-in-out infinite;
+}
+
+.wish-content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wish-text {
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 0;
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+.wish-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.wish-nav-btn {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+}
+
+.wish-nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+}
+
+.wish-counter {
+  background: linear-gradient(135deg, #ffe4e6, #ffc1cc);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: #ff1493;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(255, 105, 180, 0.2);
+}
+
+.pookie-quotes-section {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+}
+
+.quote-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.quote-header h3 {
+  font-size: 1.8rem;
+  color: #ff1493;
+  margin: 0;
+  font-weight: 700;
+}
+
+.quote-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #ffe4e6, #ffc1cc);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.quote-cat {
+  font-size: 3rem;
+  animation: catWiggle 2s ease-in-out infinite;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.quote-btn {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+}
+
+.quote-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+}
+
+.wishes-gallery {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-header h3 {
+  font-size: 1.8rem;
+  color: #ff1493;
+  margin: 0;
+  font-weight: 700;
+}
+
+.wishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.wish-bubble {
+  background: linear-gradient(135deg, #ffe4e6, #ffc1cc);
+  border-radius: 15px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+  border: 2px solid transparent;
+}
+
+.wish-bubble:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.4);
+  border-color: #ff69b4;
+}
+
+.wish-bubble.active {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.6);
+}
+
+.wish-bubble.active .bubble-cat {
+  animation: catCelebrate 1s ease-in-out infinite;
+}
+
+.bubble-cat {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  animation: catFloat 3s ease-in-out infinite;
+}
+
+.bubble-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+@keyframes cardFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%); }
+  100% { transform: translateX(100%) translateY(100%); }
+}
+
+@keyframes catBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes heartsFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes textGlow {
+  0%, 100% { text-shadow: 0 0 5px rgba(255, 20, 147, 0.3); }
+  50% { text-shadow: 0 0 15px rgba(255, 20, 147, 0.6); }
+}
+
+@keyframes catWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+@keyframes catFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes catCelebrate {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.2) rotate(10deg); }
+}
+
+@media (max-width: 768px) {
+  .wishes-container {
+    padding: 0 1rem;
+  }
+  
+  .wish-card {
+    padding: 2rem;
+  }
+  
+  .wish-text {
+    font-size: 1.2rem;
+  }
+  
+  .wish-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .wishes-grid {
+    grid-template-columns: 1fr;
+  }
+}
